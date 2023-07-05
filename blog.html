@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- The design of this website is based on https://isakzhang.github.io/ and modified by Xingxuan Li.
+     PLS ask for permission & add a link to this website before you directly copy and apply to yours -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title> Xingxuan Li's Homepage </title>
+  <!-- link rel="icon" href="images/nlp_logo.jpg" / -->
+  <meta name="author" content="Xingxuan Li">
+  <meta name="keywords" content="Xingxuan Li, 李星漩, Xingxuan Li NTU, NLP, Xingxuan Li Alibaba">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="Homepage of Xingxuan Li">
+  <link rel="stylesheet" href="./styles.css">
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134238626-1"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-134238626-1');
+  </script>
+
+</head>
+
+<body>
+  <div class="container content"> 
+  <main>
+  <div class="home">
+
+  <div class="mini-intro">
+  <img class="avatar" src="img/xxl.png" alt="xxl-photo">
+
+  <h1 id="xxli">Xingxuan Li <span style="font-family:STFangsong">(李星漩)</span></h1>
+  <br>Ph.D. Candidate
+  <br>NTU-NLP Lab, Nanyang Technological University
+  <br>Language Technology Lab, DAMO Academy, Alibaba Group
+  <br><br>
+  Contact: <code class="language-plaintext highlighter-rouge">xingxuan001 [at] ntu.edu.sg</code>
+  
+  <br>More about me: <a href="https://scholar.google.com/citations?user=IqVxTDAAAAAJ&hl=en">Google Scholar</a> / <a href="https://github.com/xingxuanli">GitHub</a> / <a href="https://www.linkedin.com/in/xingxuan-li/">LinkedIn</a>
+  <!-- 
+  <br>Quick jumps: [<a href="#bio">Short Bio</a>] [<a href="#pub">Publications</a>] [<a href="#awards">Honors</a>] [<a href="#professional">Service</a>] [<a href="#teaching">Teaching&Talk</a>]
+  -->
+
+  <!--Navigation bar-->
+  <div id="menu">
+    <div>
+      <a href="index.html">Home</a>
+    </div>
+    <div>
+      <a href="research.html">Publications</a>
+    </div>
+    <!-- <div>
+      <a href="#teaching">Teaching & Talk</a>
+    </div> -->
+    <div>
+      <a href="blog.html">Blog</a>
+    </div>
+    <script>
+      $(function () {
+        const current = window.location.pathname.split("/");
+        $('#menu div a').each(function(){
+          const $this = $(this);
+          // if the current path is like this link, make it active
+          if (current.indexOf($this.attr("href")) !== -1) {
+            $this.parent().addClass("now");
+          }
+        })
+      });
+    </script>
+  </div>
+  <!--end of Navigation bar-->
+
+  
+  <h3><a name="pub"></a>English Articles</h3> 
+    <ul>
+      <li>
+        <div id="text" style = "color:#1f57b8">Can ChatGPT-like Generative Models Guarantee Factual Accuracy? On the Mistakes of New Generation Search Engines</div>
+        Ruochen Zhao*, <strong>Xingxuan Li</strong>*, Yew Ken Chia*, Bosheng Ding*, Lidong Bing.
+        <br>arXiv:2304.11076       
+        [<a href="https://arxiv.org/abs/2304.11076">paper</a>] [<a href="https://dev.to/ruochenzhao3/can-chatgpt-like-generative-models-guarantee-factual-accuracy-on-the-mistakes-of-microsofts-new-bing-111b">blog</a>]
+      </li>
+      <p> </p>
+    </ul>
+
+  <h3><a name="pub"></a>Chinese Articles</h3> 
+  <ul>
+      <li>
+        <div id="text" style = "color:#1f57b8">别只骂谷歌Bard了，ChatGPT加持的微软New Bing也错误频出</div>
+        <strong>李星漩</strong>,丁博生,赵若辰,谢耀赓,邴立东.
+        <br>机器之心 
+        [<a href="https://mp.weixin.qq.com/s/euMIkTWOoqRrbL8rZ8-KIA">blog</a>]
+      </li>
+      <p> </p>
+    </ul>
+</div>
+
+<div id='footer'>
+  <p style="text-align:right;">Last modified date: July 2023</p>
+</div>
+
+</body>
+
+</html>
